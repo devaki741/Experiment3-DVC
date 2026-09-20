@@ -21,10 +21,9 @@ y = data.iloc[:, -1]
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
-
 model = RandomForestClassifier(
-    n_estimators=100,
-    max_depth=5,
+    n_estimators=200,
+    max_depth=10,
     random_state=42
 )
 
